@@ -4,13 +4,13 @@ let kihivasok = ["no pallet","no ablak","cserélj ki egy perket no mitherre","do
 function build() {
     let i = Math.floor(Math.random() * builds.length)
     let b = document.getElementById("build")
-    b.innerHTML = builds[i]
+    b.innerHTML = "Build: " + builds[i]
     console.log(builds[i]);
 }
 
 function kihivas() {
     let i = Math.floor(Math.random() * builds.length)
     let b = document.getElementById("kihivas")
-    b.innerHTML = kihivasok[i]
+    b.innerHTML = "Kihívás: " + kihivasok[i]
     console.log(kihivasok[i]);
 }

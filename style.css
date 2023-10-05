@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    width: 90%;
+    background-color: rgb(126, 126, 126);
+    border-radius: 1vmin;
+}
