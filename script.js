@@ -12,7 +12,7 @@ function build() {
 }
 
 function kihivas() {
-    let i = Math.floor(Math.random() * builds.length)
+    let i = Math.floor(Math.random() * kihivasok.length)
     let b = document.getElementById("kihivas")
     b.innerHTML = "Kihívás: " + kihivasok[i]
     console.log(kihivasok[i]);
