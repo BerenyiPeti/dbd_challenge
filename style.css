@@ -7,10 +7,48 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    color: black
 }
 
-main {
+.main-cont {
     width: 90%;
+    padding: 2vmin;
     background-color: rgb(126, 126, 126);
     border-radius: 1vmin;
 }
+
+button {
+    min-width: 50vmin;
+    height: 100px;
+    border-radius: 2vmin;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black
+}
+
+button:active {
+    background-color: black;
+    color: white
+}
+
+.tarolo {
+    /* border: 1px solid black;  */
+    min-height: 200px; 
+    border-radius: 2vmin;
+}
+
+.row div {
+    display: flex; justify-content: center;
+}
+
+h1 {
+    color: black;
+    font-weight: bold
+}
+
+/* div {
+    border: 1px solid black;
+    padding: 2vmin;
+    color: white
+} */

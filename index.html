@@ -4,18 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
 </head>
 
 <body>
-    <main>
-        <button onclick="build()">Adj egy buildet</button>
-        <h1 id="build">Build:</h1>
-        <button onclick="kihivas()">Adj egy kihívást</button>
-        <h1 id="kihivas">Kihívás:</h1>
-    </main>
+    <!-- <main>
+        <div class="tarolo"><button onclick="build()">Adj egy buildet</button></div>
+        <div class="tarolo">
+            <h1 id="build"></h1>
+        </div>
+        <div class="container">
+            <div class="col-md-12" style="border: 2px solid black; border-radius: 2vmin;"></div>
+        </div>
+        <div class="tarolo"><button onclick="kihivas()">Adj egy kihívást</button></div>
+        <div class="tarolo">
+            <h1 id="kihivas"></h1>
+        </div>
+    </main> -->
+    <div class="container main-cont">
+        <div class="row">
+            <div class="col-md-12" style="display: flex; justify-content: center;">
+                <button onclick="roll()">PÖRGETÉS</button>
+            </div>
+        </div>
+        <br>
+        <!-- <button onclick="build()">Adj egy buildet</button> -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1>BUILD</h1>
+            </div>
+            <div class="col-md-6">
+                <h1>CHALLENGE</h1>
+            </div>
+            <div class="col-md-6 tarolo">
+                <h2 id="build"></h2>
+            </div>
+            <div class="col-md-6 tarolo">
+                <h2 id="kihivas"></h2>
+            </div>
+        </div>
+        <table class="table">
+            <caption>szia</caption>
+        </table>
+    </div>
+
 </body>
 
 </html>

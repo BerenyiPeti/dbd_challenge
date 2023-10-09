@@ -1,19 +1,42 @@
-let builds = ["headon","láda","4 exhaustion","loopolos", "healer", "genrushos", "sneaky build", "infinite item", 
+let builds = ["headon", "láda","4 exhaustion","loopolos", "healer", "genrushos", "sneaky build", "infinite item", 
 "sabos build", "power struggles build"]
-let kihivasok = ["no pallet","no ablak","cserélj ki egy perket no mitherre","dobj le minden palletet egyből amint átszaladsz rajta", 
+let challenges = ["no pallet", "no ablak","cserélj ki egy perket no mitherre","dobj le minden palletet egyből amint átszaladsz rajta", 
 "no gen ha már csinál valaki", "terror radius = fast vault", "ha valakit chaselnek csak csapatban lehet genezni", 
 "csak healthy csapattárs healelhet"]
 
-function build() {
-    let i = Math.floor(Math.random() * builds.length)
-    let b = document.getElementById("build")
-    b.innerHTML = "Build: " + builds[i]
-    console.log(builds[i]);
+let selectedBuild
+let selectedChallenge
+
+function roll() {
+    generateBuild()
+    generateChallenge()
 }
 
-function kihivas() {
-    let i = Math.floor(Math.random() * kihivasok.length)
-    let b = document.getElementById("kihivas")
-    b.innerHTML = "Kihívás: " + kihivasok[i]
-    console.log(kihivasok[i]);
+function generateBuild() {
+    let build = builds[randomize(builds.length)]
+    selectedBuild = document.getElementById("build").innerHTML
+
+    if (build != selectedBuild) {
+        document.getElementById("build").innerHTML = build
+    } else {
+        generateBuild()
+    }
+
+
+}
+
+function generateChallenge() {
+    let challenge = challenges[randomize(challenges.length)]
+    selectedChallenge = document.getElementById("kihivas").innerHTML
+
+    if (challenge != selectedChallenge) {
+        document.getElementById("kihivas").innerHTML = challenge
+    } else {
+        generateChallenge()
+    }
+}
+
+function randomize(hossz) {
+    return Math.floor(Math.random() * hossz)
+
 }
