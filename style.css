@@ -64,6 +64,8 @@ button:active {
     box-sizing: border-box;
     padding: 0;
     min-width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .row div {
@@ -72,7 +74,11 @@ button:active {
 
 h1 {
     color: white;
-    font-weight: bold
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
 }
 
 div {
