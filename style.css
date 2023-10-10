@@ -10,12 +10,12 @@ body {
     color: black
 }
 
-.main-cont {
+/* .main-cont {
     width: 90%;
     padding: 2vmin;
     background-color: rgb(126, 126, 126);
     border-radius: 1vmin;
-}
+} */
 
 .large-button {
     min-width: 50vmin;
@@ -45,6 +45,7 @@ button:active {
 
 .tarolo {
     /* border: 1px solid black;  */
+    background-color: rgb(126, 126, 126);
     min-height: 200px; 
     border-radius: 2vmin;
 }
