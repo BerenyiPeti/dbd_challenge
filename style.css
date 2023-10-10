@@ -3,19 +3,21 @@
 }
 
 body {
-    background-color: rgb(49, 49, 49);
+    background-color: black/* rgb(49, 49, 49) */;
     display: flex;
     justify-content: center;
     align-content: center;
-    color: black
+    color: black;
+    /* background-image: url(pictures/dbd.jpg) ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* .main-cont {
-    width: 90%;
+.main-cont {
+    width: 50%;
     padding: 2vmin;
-    background-color: rgb(126, 126, 126);
-    border-radius: 1vmin;
-} */
+}
 
 .large-button {
     min-width: 50vmin;
@@ -27,7 +29,7 @@ body {
     color: black
 }
 
-.small-button {
+.medium-button {
     min-width: 25vmin;
     height: 70px;
     border-radius: 1vmin;
@@ -37,17 +39,31 @@ body {
     color: black
 }
 
+.small-button {
+    min-width: 100%;
+    height: 70px;
+    border-radius: 1vmin;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black
+}
+
 
 button:active {
     background-color: black;
-    color: white
+    color: white;
+    border: 2px solid white;
 }
 
 .tarolo {
-    /* border: 1px solid black;  */
+    border: 5px solid rgb(255, 255, 255); 
     background-color: rgb(126, 126, 126);
-    min-height: 200px; 
-    border-radius: 2vmin;
+    min-height: 150px; 
+    border-radius: 1vmin;
+    box-sizing: border-box;
+    padding: 0;
+    min-width: 100%;
 }
 
 .row div {
@@ -55,12 +71,10 @@ button:active {
 }
 
 h1 {
-    color: black;
+    color: white;
     font-weight: bold
 }
 
-/* div {
-    border: 1px solid black;
-    padding: 2vmin;
-    color: white
-} */
+div {
+    padding: 0;
+}
