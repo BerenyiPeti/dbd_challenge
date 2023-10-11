@@ -60,6 +60,7 @@ button:active {
     border: 5px solid rgb(255, 255, 255); 
     background-color: rgb(126, 126, 126);
     min-height: 150px; 
+    max-height: 150px;
     border-radius: 1vmin;
     box-sizing: border-box;
     padding: 0;
@@ -83,4 +84,9 @@ h2 {
 
 div {
     padding: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
