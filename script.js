@@ -3,9 +3,12 @@ let builds = ["headon", "láda", "4 exhaustion", "loopolos", "healer", "genrusho
 let challenges = ["no pallet", "no ablak", "cserélj ki egy perket no mitherre", "dobj le minden palletet egyből amint átszaladsz rajta",
     "no gen ha már csinál valaki", "terror radius = fast vault", "ha valakit chaselnek csak csapatban lehet genezni",
     "csak healthy csapattárs healelhet"]
+
 let items = ["alexesToolbox.png", "brokenKey.png", "commodiousToolbox.png", "dullKey.png", "engeneersToolbox.png", "firstAidKit.png", "greenMap.png",
     "mechanicsToolbox.png", "medkit.png", "rainbowMap.png", "rangersMedkit.png", "rundownMedkit.png", "skeletonKey.png", "sportFlashlight.png", "toolbox.png",
-    "utilityFlashlight.png", "wornoutToolbox.png", "yellowFlashlight.png"]
+    "utilityFlashlight.png", "wornoutToolbox.png", "yellowFlashlight.png", "yellowToolbox.png"]
+
+
 let addons = ["addon1", "addon2", "addon3", "addon4"]
 let itemss = [
     {
@@ -19,6 +22,67 @@ let itemss = [
     {
         src: "commodiousToolbox.png",
         rarity: "green"
+    },
+    {
+        src: "dullKey.png",
+        rarity: "purple"
+    },
+    {
+        src: "engeneersToolbox.png",
+        rarity: "purple"
+    },
+    {
+        src: "firstAidKit.png",
+        rarity: "yellow"
+    },
+    {
+        src: "greenMap.png",
+        rarity: "green"
+    },
+    {
+        src: "mechanicsToolbox.png",
+        rarity: "green"
+    },
+    {
+        src: "medkit.png",
+        rarity: "green",
+    },
+    {
+        src: "rainbowMap.png",
+        rarity: "red"
+    },
+    {
+        src: "rangersMedkit.png",
+        rarity: "purple"
+    },
+    {
+        src: "rundownMedkit.png",
+        rairty: "brown"
+    },
+    {
+        src: "skeletonKey.png",
+        rarity: "red"
+    },
+    {
+        src: "sportFlashlight.png",
+        rarity: "green"
+    },
+    {
+        src: "utilityFlashlight.png",
+        rarity: "purple"
+    },
+    ,
+    {
+        src: "yellowFlashlight.png",
+        rarity: "yellow"
+    },
+    {
+        src: "yellowToolbox.png",
+        rarity: "yellow"
+    },
+    {
+        src: "wornoutToolbox.png",
+        rarity: "brown"
     }
 ]
 
@@ -28,11 +92,11 @@ let selectedItem
 let selectedAddon
 
 function roll() {
-    console.log(itemss[1].src);
     generateBuild()
     generateChallenge()
     generateItem()
     generateAddons()
+    console.log(itemss.length);
 }
 
 
@@ -48,6 +112,7 @@ function generateItem() {
     let index = Math.floor(Math.random() * itemss.length)
     let item = itemss[index].src
     let rarity = itemss[index].rarity
+    console.log(item, rarity);
     document.getElementById("item").innerHTML = `<img src="pictures/${item}" alt="item">`
     document.getElementById("item").style.backgroundColor = rarity
 
