@@ -23,10 +23,6 @@
             <button class="medium-button" id="defaultButton" disabled onclick="defaultButton()">DEFAULT</button>
             <button class="medium-button" id="uniqueButton" onclick="uniqueButton()">UNIQUE</button>
         </div>
-        <div id="uniqueDiv" class="row tarolo" style="display: none;">
-            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
-            <h2>coming soon...</h2>
-        </div>
         <br>
         <div class="row">
             <div class="col-md-12" style="display: flex; justify-content: center;">
@@ -41,7 +37,7 @@
                 <div class="col-md-12 tarolo">
                     <h2 id="build"></h2>
                 </div>
-            </div>      
+            </div>
             <div class="col-md-2" style="padding: 0;">
                 <div class="col-md-12">
                     <button class="small-button" onclick="generateBuild()">ROLL</button>
@@ -82,6 +78,18 @@
                 <div class="col-md-12">
                     <button class="small-button" onclick="generateItem()">ROLL</button>
                 </div>
+            </div>
+        </div>
+        <div class="row" id="uniqueDiv">
+            <hr>
+            <div class="col-md-12" style="padding: 0;">
+                <div class="row tarolo">
+                    <textarea name="" id="ta" cols="30" rows="10"
+                        style="background: none; resize: none; min-width: 100%; font-size: 25px;"></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button class="medium-button">SET</button>
             </div>
         </div>
     </div>
